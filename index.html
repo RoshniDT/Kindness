@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy 23rd Birthday Ki 🦢✨</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom right, #fffdf8, #ffb347);
+      overflow-x: hidden;
+      cursor: url('SWANI.png'), auto;
+    }
+
+    header {
+      text-align: center;
+      padding: 70px 20px;
+      background-color: rgba(255, 255, 255, 0.85);
+      border-bottom: 5px solid #ff7f11;
+      box-shadow: 0 0 20px #ff7f11;
+    }
+    header h1 {
+      font-size: 3.5em;
+      color: #ff7f11;
+      margin-bottom: 10px;
+      text-shadow: 0 0 10px white;
+    }
+    header h2 {
+      font-size: 1.8em;
+      color: #444;
+      margin-top: 0;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 12px;
+      padding: 40px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+      border: 4px solid #ff7f11;
+      box-shadow: 0 0 15px #ff7f11;
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .message {
+      background-color: rgba(255, 255, 255, 0.92);
+      padding: 70px 20px;
+      text-align: center;
+      border-top: 5px solid #ff7f11;
+      border-bottom: 5px solid #ff7f11;
+      box-shadow: 0 0 20px #ff7f11;
+    }
+    .message h2 {
+      font-size: 2.8em;
+      color: #ff7f11;
+    }
+    .message p {
+      max-width: 900px;
+      margin: 20px auto;
+      font-size: 1.25em;
+      line-height: 1.7;
+      color: #333;
+    }
+
+    .reasons {
+      padding: 60px 20px;
+      background: rgba(255, 255, 255, 0.85);
+      text-align: center;
+    }
+    .reasons h2 {
+      font-size: 2.5em;
+      color: #ff7f11;
+    }
+    .reasons ul {
+      max-width: 800px;
+      margin: 20px auto;
+      text-align: left;
+      font-size: 1.2em;
+      line-height: 1.7;
+    }
+
+    .floating-swan {
+      position: fixed;
+      width: 90px;
+      opacity: 0.8;
+      animation: float 12s infinite linear;
+      z-index: 9999;
+    }
+    @keyframes float {
+      0% { transform: translateY(110vh) translateX(-20vw); }
+      50% { transform: translateY(40vh) translateX(20vw); }
+      100% { transform: translateY(-20vh) translateX(60vw); }
+    }
+
+    .sparkle {
+      position: fixed;
+      width: 15px;
+      height: 15px;
+      background: white;
+      border-radius: 50%;
+      box-shadow: 0 0 10px white;
+      animation: sparkle 2s infinite ease-in-out;
+      z-index: 9998;
+    }
+    @keyframes sparkle {
+      0% { opacity: 0; transform: scale(0.5); }
+      50% { opacity: 1; transform: scale(1.2); }
+      100% { opacity: 0; transform: scale(0.5); }
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background-color: #fffaf0;
+      color: #555;
+      font-style: italic;
+      border-top: 5px solid #ff7f11;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- FLOATING SWANS -->
+  <img src="SWANI.png" class="floating-swan" style="left:5%;">
+  <img src="SWANII.webp" class="floating-swan" style="left:40%; animation-delay:3s;">
+  <img src="SWANIII.jpeg" class="floating-swan" style="left:70%; animation-delay:6s;">
+
+  <!-- SPARKLES -->
+  <script>
+    for (let i = 0; i < 40; i++) {
+      let s = document.createElement("div");
+      s.className = "sparkle";
+      s.style.left = Math.random() * 100 + "vw";
+      s.style.top = Math.random() * 100 + "vh";
+      s.style.animationDelay = Math.random() * 2 + "s";
+      document.body.appendChild(s);
+    }
+  </script>
+
+  <!-- CONFETTI -->
+  <script>
+    window.onload = () => {
+      for (let i = 0; i < 80; i++) {
+        let c = document.createElement("div");
+        c.style.position = "fixed";
+        c.style.width = "10px";
+        c.style.height = "10px";
+        c.style.background = ["#ff7f11","#ffffff","#ffd9b3"][Math.floor(Math.random()*3)];
+        c.style.left = Math.random()*100 + "vw";
+        c.style.top = "-20px";
+        c.style.opacity = 0.9;
+        c.style.borderRadius = "3px";
+        c.style.transform = "rotate(" + Math.random()*360 + "deg)";
+        c.style.animation = "fall 3s linear forwards";
+        c.style.zIndex = 9999;
+        document.body.appendChild(c);
+      }
+    };
+  </script>
+
+  <style>
+    @keyframes fall {
+      to { transform: translateY(110vh) rotate(720deg); opacity: 0; }
+    }
+  </style>
+
+  <!-- MUSIC -->
+  <audio autoplay loop>
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Happy 23rd Birthday Ki 🧡🦢</h1>
+    <h2>My Gemini twin, my dyke soulmate, my forever friend.</h2>
+  </header>
+
+  <!-- GALLERY -->
+  <section class="gallery" id="gallery"></section>
+
+  <script>
+    const images = [
+      "Ki1.JPG","Ki2.JPG","Ki3.JPG","Ki4.JPG","Ki5.JPG","Ki6.JPG","Ki7.JPG","Ki8.JPG",
+      "Ki9.JPG","Ki10.JPG","Ki11.JPG","Ki12.jpeg","Ki13.jpeg","Ki14.jpeg","Ki15.jpeg",
+      "Ki16.jpeg","Ki17.jpeg","Ki18.JPG","Ki19.jpeg","Ki20.jpeg","Ki21.jpeg","Ki22.jpeg",
+      "Ki23.jpeg","Ki24.JPG","Ki25.JPG","Ki26.JPG","Ki27.JPG","Ki28.jpeg",
+      "SWANI.png","SWANII.webp","SWANIII.jpeg"
+    ];
+
+    images.sort(() => Math.random() - 0.5);
+
+    const gallery = document.getElementById("gallery");
+    images.forEach(src => {
+      const img = document.createElement("img");
+      img.src = src;
+      gallery.appendChild(img);
+    });
+  </script>
+
+  <!-- MESSAGE -->
+  <section class="message">
+    <h2>My Birthday Message to You, Ki</h2>
+    <p>
+      Ki, my bestest friend ever since high school, my Gemini twin, my dyke to my butch, my other half.  
+      You have stuck by me through every single thing in my life.  
+      You know me better than I know myself, and I cannot wait to build our big mega dyke house for us and our future wives.  
+      My name means light, but you are the one who brings light into my life all the time.  
+      I could never have asked for a better pal to grow old with till the end of time, till death do us apart.  
+      I can never put into words how much I am grateful to have you in my life, but I will show you and continue showing you every day and be the bestest friend I can be towards you.  
+      Happiest of birthdays, my Kindness, you are everything good in this world.
+    </p>
+  </section>
+
+  <!-- 23 REASONS -->
+  <section class="reasons">
+    <h2>23 Reasons I Love Ki 🧡🦢</h2>
+    <ul>
+      <li>Your name is literally Kindness.</li>
+      <li>You are my Gemini twin.</li>
+      <li>You are the dyke to my butch.</li>
+      <li>You know me better than I know myself.</li>
+      <li>You’ve stuck by me through everything.</li>
+      <li>You make me laugh until I wheeze.</li>
+      <li>You bring light into my life.</li>
+      <li>You are loyal beyond words.</li>
+      <li>You are the safest person I know.</li>
+      <li>You are my soulmate in friendship form.</li>
+      <li>You make every memory better.</li>
+      <li>You are gentle and fierce at the same time.</li>
+      <li>You love swans like a religion.</li>
+      <li>You hype me up always.</li>
+      <li>You see the best in me.</li>
+      <li>You never judge me.</li>
+      <li>You are hilarious without trying.</li>
+      <li>You are my future mega dyke housemate.</li>
+      <li>You are my forever friend.</li>
+      <li>You make life feel lighter.</li>
+      <li>You are magic in human form.</li>
+      <li>You are my person.</li>
+      <li>You are Ki — and that is enough.</li>
+    </ul>
+  </section>
+
+  <footer>
+    Roshni & Ki — two peas in a pod forever 🧡🦢
+  </footer>
+
+</body>
+</html>
